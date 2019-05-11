@@ -1,0 +1,686 @@
+/*通用设置*/
+body{
+    height:100%;margin:8px
+}
+
+body, a, td, th {
+    font-size: 16px;font-family: "Microsoft YaHei", STHeiti,sans-serif;
+}
+
+A{color:#2fa4e7 }
+
+A:link {
+    text-decoration: underline;
+}
+
+A:hover {
+    text-decoration: underline;
+}
+
+
+DIV.visible-xs-block{
+    display: none;
+}
+.button,.submitBotton1 {
+
+    background-color: #ffffff;
+
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 8px 8px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    border-color: rgba(0,0,0,0.1);
+    border-bottom: 1px solid #e6e6e6;
+    background-image: linear-gradient(#fff, #fff 60%, #f5f5f5);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff5f5f5', GradientType=0);
+    -webkit-filter: none;
+    filter: none;
+    border-bottom: 1px solid #e6e6e6;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+    color: #555555;
+}
+
+
+.button:hover{
+    opacity:0.8;
+    filter:alpha(opacity=80)
+}
+
+
+.submitBotton1 {
+    color: #ffffff;
+    background-color: #2fa4e7;
+    border-color: #2fa4e7;
+    background-image: linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+
+}
+
+#bSubmit{
+    color: #ffffff;
+    background-color: #2fa4e7;
+    border-color: #2fa4e7;
+    background-image: linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+}
+
+.propmain .button {
+    width: 80px;
+    line-height: 20px
+}
+
+/*页面标题*/
+div.pageTitle {
+    color: #317eac;
+    font-size: 24px;
+    font-weight: 500;
+    height: 40px;
+    z-index: -1;
+    float:none;
+    text-align:left
+
+}
+
+div.pageTitle SPAN {
+     margin: 10px 0 0 0px;
+}
+
+/*页面标题中的功能图标*/
+div.pageTitle IMG {
+    vertical-align: top;
+    margin-right: 5px
+}
+
+/*页面中的操作链接*/
+div.fnLink {
+    text-align: left;margin-top:20px;margin-bottom: 10px;
+
+}
+
+div.fnLink A {
+    text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #2fa4e7;
+    border-color: #2fa4e7;
+    background-image: linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
+}
+
+div.fnLink A.normal{
+    background-color: #f5f5f5;
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    border: 1px solid #bbbbbb;
+    color: #333333
+}
+
+div.fnLink A SPAN {
+    margin: 5px 10px 5px 10px
+}
+
+span.trainAp {
+    color: #385982;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    display: inline-block;
+    line-height: 25px
+}
+
+div.fnLink A:hover {
+    opacity:0.9;filter:alpha(opacity=80)
+}
+
+div.fnLink A.delete {
+    color: red
+}
+
+div.submitBotton A {
+    color: #385982;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    background: url('images/leftbuttonbg.jpg');
+    margin-top: 0;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #BDD2E7;
+    line-height: 25px
+
+}
+
+div.submitBotton A SPAN {
+    margin: 5px 10px 5px 10px;
+
+}
+
+div.submitBotton A:hover {
+    color: red
+}
+
+div.peixun {
+    text-align: left;
+    width: 100%;
+    height: 40px; /*border:1px solid red;*/
+}
+
+div.agreeSet {
+    text-align: left;
+    width: 100%;
+    height: 20px;
+    color: #0061AE;
+}
+
+
+table.trainUnitTab {
+    float: left;
+    text-align: left;
+    margin: 0 10px 0 10px;
+    color: #0061AE;
+    font-size: 12px;
+    height: 20px; /*border:1px solid red;*/
+}
+
+table.trainUnitTab td {
+    padding: 4px;
+}
+
+
+
+/*页面描述区*/
+.pageDesc {
+    text-align: left;
+    padding-bottom: 10px;
+    color: black;
+    font-size: 85%;
+    border-bottom:1px solid #eeeeee
+
+}
+
+.pageDesc SPAN {
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+/*搜索*/
+div.search {
+    text-align: right;
+
+    margin-top: 0;
+    padding: 0;
+    line-height:35px
+
+}
+
+ input.txtInput , SELECT, INPUT.hourInput,INPUT[type="text"],INPUT[type="button"]{
+    height: 34px;
+    padding0: 8px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+ SELECT{
+     padding:4px
+ }
+
+ DIV.search input[type="text"]{
+     height:30px;font-size:14px;padding:2px
+ }
+
+DIV.search SELECT{
+    height:30px;font-size:14px;padding:2px
+}
+
+div.search IMG.search {
+    vertical-align: middle
+}
+
+.tblTitle {
+    font-weight: 700
+}
+
+.buttons {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/*列表页面CSS定义开始*/
+/*标签页*/
+DIV.pageTab {
+    margin: 15px 5px 10px 0px;
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+
+    padding-left: 20px;
+
+}
+
+DIV.pageTab A {
+    color: #375A94;
+    text-decoration: none;
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom:-1px;
+    border-bottom: 1px solid #dddddd;
+    color: #2fa4e7;
+    text-decoration: none;
+}
+
+DIV.pageTab A:hover {
+    text-decoration: underline
+}
+
+DIV.pageTab A SPAN {
+    margin: 10px
+}
+
+DIV.pageTab A.selected {
+    color: #555555;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+
+
+
+DIV.pageTab2 {
+    margin: 15px 5px 10px 10px;
+    border-bottom: 1px dotted gray;
+    text-align: left;
+    font-family: simsun;
+    font-size: 11px;
+    padding-left: 40px
+}
+
+DIV.pageTab2 A {
+    border: 1px solid gray;
+    color: black;
+    text-decoration: underline;
+    font-size: 11px;
+    background: #fefefe;
+    margin-right: -0.5em;
+    display: inline-block;
+    line-height: 25px;
+    border-bottom: none
+}
+
+DIV.pageTab2 A SPAN {
+    margin: 8px
+}
+
+DIV.pageTab2 A.normal:hover {
+    background: #fefefe
+}
+
+DIV.pageTab2 A.normal {
+    background: #efefef
+}
+
+/*数据列表*/
+DIV.pageTab2 A.selected {
+    background: AliceBlue;
+    padding-top: 2px;
+}
+
+div.mainData {
+    margin: 0 /*display: block*/
+}
+
+DIV.mainData TABLE.listTable {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #dddddd;
+    margin: 0;
+    border-spacing: 0
+}
+
+DIV.mainData FORM {
+    display: inline
+}
+
+.sorttd {
+    background-color: #FFFFF0;
+}
+
+TABLE.listTable A {
+
+}
+
+TABLE.listTable th {
+    padding:8px;
+    border:1px solid #dddddd;
+    border-bottom:2px solid #EEEEEE;
+
+}
+
+TABLE.listTable th A {
+
+    color:#2fa4e7;
+    text-decoration: none;
+}
+
+TABLE.listTable th A:hover{text-decoration: underline}
+
+TABLE.listTable TD {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+TABLE.listTable TD A {
+    color:#2fa4e7;
+    text-decoration: underline;
+}
+
+TABLE.listTable TD A:hover {
+    opacity: 0.7;
+    filter:alpha(opacity=70)
+}
+
+
+TABLE.listTable TR.selected {
+    background: AliceBlue
+}
+
+
+TABLE.listTable tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+TABLE.newTable {
+    width: 100%;
+    border-collapse: collapse; /*border: 1px solid #CAE1F1;*/
+    margin: 0;
+    border-spacing: 0;
+}
+
+TABLE.newTable thead {
+/*background: url(images/theadbg.jpg)*/
+    background: #fff;
+}
+
+TABLE.newTable th {
+/*border: 1px solid #C6E2F7;*/
+    padding: 4px;
+    vertical-align: top;
+    font-size: 13px;
+    text-align: left;
+}
+
+/*
+TABLE.newTable TD {
+  color: #003366;
+  border: 1px solid #C6E2F7;
+  text-align: left;
+  padding: 4px;
+}
+*/
+TABLE.newTable TD.num {
+    font-weight: bold; /*text-align:center;*/
+
+}
+
+/*
+TABLE.newTable TD.op A {
+color: #7f9db9;
+width:100%;
+text-decoration: none;
+}
+
+TABLE.newTable TD.op A:hover {
+color: #003366;
+
+}    */
+
+DIV.prop DIV.title1 {
+    margin: 0;
+    text-align: center;
+    background: url('images/theadbg.jpg');
+    color: #32558D;   line-height: 24px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+#xb {
+    width: 100%;
+    text-align: left;
+}
+
+div.page {
+    text-align: right;
+    margin: 15px 5px 0 10px;
+    font-size: 12px;
+    height: 27px;
+
+}
+
+DIV.page FORM {
+    display: inline
+}
+
+div.page A {
+    margin-left: 5px;
+    font-size: 12px;
+
+
+    text-decoration: none
+}
+
+DIV.page A:hover{text-decoration: underline}
+
+DIV.page A SPAN {
+    margin: 2px
+}
+
+div.page SPAN.num {
+    font-weight: bold
+}
+
+div.page SPAN.disable {
+    color: gray
+}
+
+div.page FORM {
+    display: inline
+}
+
+div.page INPUT.txt {
+    border: none;
+    border-bottom: 1px solid #2F5A8F;
+    width: 20px;
+    font-size: 11px
+}
+
+
+DIV.page input{
+    height:20px;font-size:11px;padding:2px
+}
+
+DIV.page SELECT{
+    height:20px;font-size:12px;padding:2px
+}
+
+div.info2 {
+    text-align: center;
+    font-size: 12px;
+    line-height: 25px;
+    color: #333333
+}
+
+div.info2 DIV {
+    background: #FFCC99;
+    display: inline-block;
+    border: 1px solid #DFB286
+}
+
+div.info2 SPAN {
+    margin-left: 40px;
+    font-weight: normal
+}
+
+div.info2 SPAN.close {
+    margin-left: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-right: 40px
+}
+
+tr.row0 {
+    background: #f9f9f9
+}
+
+/*
+TD.op A {
+  margin-left: 10px
+}  */
+
+/*属性页*/
+DIV.propmain {
+
+
+}
+
+DIV.prop {
+    text-align: left;
+    margin-bottom: 10px;
+    border: 1px solid #dddddd;
+    padding:20px;
+    border-radius: 8px;
+}
+
+DIV.prop UL {
+    margin: 0;
+    padding: 0;
+}
+
+DIV.prop UL LI {
+    margin-left: 20px;
+    list-style: none;
+    line-height: 36px
+
+}
+
+DIV.prop LI SPAN.itemtitle {
+    display: inline-block;
+    width: 120px;
+
+}
+
+.spanInput {
+    font-size: 12px;
+}
+
+DIV.prop DIV.title {
+    margin: 0;
+    text-align: left;
+    background: url('images/theadbg.jpg');
+    color: #32558D;
+    line-height: 24px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: bold
+}
+
+DIV.prop SPAN.num {
+    color: white;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: #0061AE;
+    line-height: 20px;
+    margin-right: 10px;
+    text-align: center
+}
+
+DIV.propmain DIV.submit {
+    text-align: center;
+    margin-right: 100px
+}
+
+font.need {
+    color: red
+}
+
+.star {
+    color: red
+}
+
+.zhankai {
+    text-decoration: none;
+}
+
+div.message {
+    margin-left: 20px;
+}
+
+.green {
+    color:green;
+}
+
+.blue {
+    color:blue;
+}
+
+.formLeft{
+    text-align:left;
+}
+
+
+@media screen and (max-width: 510px) {
+    a:link{
+        text-decoration: none;
+        color: #2fa4e7;
+    }
+
+
+}
