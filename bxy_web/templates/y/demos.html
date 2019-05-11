@@ -1,0 +1,152 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"" http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" language="javascript" charset="GBK" src="/static/demo/js/App.js"></script>
+    <script type="text/javascript">
+        IncludeCSS("admin");
+        IncludeJS("jquery.min.js");
+        IncludeJS("qrcode.js");
+        //包含管理页面CSS
+    </script>
+    <SCRIPT LANGUAGE="JavaScript">
+        
+
+        function doclose(){
+            window.close();
+        }
+        $(document).ready(function(){
+
+            if($("#listTab").height() > 100){
+                $("#frame1").height($("#listTab").height()+330);
+            }
+
+            var qrcode = new QRCode(document.getElementById("qrcode"), {
+                width : 130,
+                height : 130
+            });
+            qrcode.makeCode("http://192.168.1.102/y/7c4a8d09ca3762af61e59520943dc26494f8941b/");
+
+        });
+        //-->
+    </SCRIPT>
+    <style media=print>
+        .noprint{display:none;}
+    </style>
+    <style type="text/css">
+        .frame1{
+            width:800px;
+            height:400px;
+            border:2px double #800000;
+            text-align:center;
+            font-size:14px;
+            margin-top:100px;
+            margin-left:auto;margin-right:auto;
+            border-radius:5px
+
+        }
+        .frameTitle{
+            text-align:center;
+            font-family:'华文中宋','宋体';
+            font-size:30px;
+            margin-top:18px;
+        }
+        .frameContent {
+            text-align:left; 
+            font-size:18px;
+            font-family:'仿宋';
+            margin:20px 30px 20px 30px;
+        }
+        .frameContent span{
+            margin-left: 20px;
+        }
+        .frameContent p {
+            line-height:180%;
+        }
+        .variable{
+            font-weight:bold;
+        }
+        .frameTrainUnit{
+            text-align:right;
+            font-family:'华文新魏';
+            font-size:22px;
+            float:right;margin-right:120px;margin-top:60px;
+            width: 200px;
+
+        }
+        .certQRCode{
+            text-align:left;
+            margin-left: 130px;
+            margin-top:10px;
+            float:left;
+            /*border:1px solid black*/
+        }
+        table{
+            border-collapse:collapse;
+            border-spacing:10px 20px;
+        }
+
+       td,th{
+            text-align:left;
+            font-family:'宋体';
+            font-size:16px;
+            margin:20px 30px 20px 30px;
+        }
+
+    </style>
+    <title>继续教育学时证明</title>
+</head>
+
+<body style="text-align:center;">
+
+<div align="center" class="frame1" id="frame1">
+   <div class="frameTitle">继续教育学时证明</div>
+ <div class="frameContent">
+    <span class="variable">淮安市金湖县金湖县戴楼镇中心小学 鲍振庆</span>（320831********0418）
+ </div>
+    <div class="frameContent">
+        <span>2015年学时明细：校本36.0；合计36.0学时</span>
+        <table border="1" cellspacing="0" cellpadding="3" width="100%" id="listTab">
+            <thead>
+                <tr>
+                    <th nowrap>名称</th>
+                    <th nowrap>学时</th>
+                    <th nowrap>级别</th>
+                    <th nowrap>培训机构</th>
+                </tr>
+            </thead>
+            <tr>
+<td>戴楼镇中心学校2015年度信息技术校本培训计划</td>
+<td nowrap>16.0</td>
+<td nowrap>校本培训</td>
+<td nowrap>金湖县戴楼镇中心小学</td>
+</tr>
+<tr>
+<td>戴楼镇中心学校2015年暑期师德培训计划 </td>
+<td nowrap>6.0</td>
+<td nowrap>校本培训</td>
+<td nowrap>金湖县戴楼镇中心小学</td>
+</tr>
+<tr>
+<td>戴楼镇中心学校2015年有效学习校本培训计划</td>
+<td nowrap>14.0</td>
+<td nowrap>校本培训</td>
+<td nowrap>金湖县戴楼镇中心小学</td>
+</tr>
+
+        </table>
+      </div>
+       <div>
+
+           <div class="certQRCode">
+               <div id="qrcode" style="width:150px; height:150px;"></div>
+           </div>
+           <div class="frameTrainUnit">
+               <div>江苏省教师培训中心</div>
+           </div>
+       </div>
+</div>
+</body>
+</html>

@@ -29,9 +29,14 @@ def get_json_response(request, json_rsp):
     return HttpResponse(json.dumps(json_rsp,cls=DateEncoder), content_type='application/json')
 
 
-def demo(request):
-    return render(request,'demo.html')
+def y(request):
+    return render(request,'y/demo.html')
 
+def y1(request):
+    return render(request,'y/demos.html')
+
+def oslo(request):
+    return HttpResponse('星光不问赶路人 时光不负有心人',content_type="text/plain;charset=UTF-8")
 
 '''
     # pc html
